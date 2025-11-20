@@ -6,19 +6,43 @@
 - Python 3.8+
 - Django 4.0+
 
-### Starting the Server
+### Setup and Starting the Server
 
-1. **Navigate to the app directory:**
+1. **Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   ```
+
+2. **Activate the virtual environment:**
+   - **Windows (PowerShell):**
+     ```powershell
+     .\venv\Scripts\Activate.ps1
+     ```
+   - **Windows (Command Prompt):**
+     ```cmd
+     venv\Scripts\activate.bat
+     ```
+   - **macOS/Linux:**
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Navigate to the app directory:**
    ```bash
    cd app
    ```
 
-2. **Run migrations (first time only):**
+5. **Run migrations (first time only):**
    ```bash
    python manage.py migrate
    ```
 
-3. **Start the development server:**
+6. **Start the development server:**
    ```bash
    python manage.py runserver
    ```
